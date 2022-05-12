@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2-alpha.1](https://github.com/minjs1cn/vue-drag-resize-next/compare/v0.0.2-alpha.0...v0.0.2-alpha.1) (2022-05-12)
+
+
+### Features
+
+* add types ([7c987b0](https://github.com/minjs1cn/vue-drag-resize-next/commit/7c987b07585f446996830d30f9f40909b55140e2))
+
 ### 0.0.2-alpha.0 (2022-05-12)
 
 

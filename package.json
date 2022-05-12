@@ -1,6 +1,6 @@
 {
   "name": "vue-drag-resize-next",
-  "version": "0.0.2-alpha.0",
+  "version": "0.0.2-alpha.1",
   "exports": {
     ".": {
       "import": "./lib/vue-drag-resize-next.es.js",

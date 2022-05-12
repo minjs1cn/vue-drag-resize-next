@@ -1,0 +1,132 @@
+.vdr {
+  position: absolute;
+  box-sizing: border-box;
+
+  &-drag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    cursor: move;
+    content: "";
+    outline: 1px dashed #ccc;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &-rotate {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+    transform: translate(-50%, -50px);
+
+    &.not-ratable {
+      display: none;
+    }
+
+    &-pointer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      display: block;
+      width: 100px;
+      height: 100px;
+      cursor: crosshair;
+      border: 1px dotted #ccc;
+      border-radius: 50%;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        width: 0;
+        height: 0;
+        content: "";
+        border-color: #6c6c6c transparent transparent;
+        border-style: solid;
+        border-width: 50px 1px 0;
+        transform: translate(-50%);
+      }
+    }
+  }
+
+  &-stick {
+    position: absolute;
+    box-sizing: border-box;
+    font-size: 1px;
+    background: #fff;
+    border: 1px solid #6c6c6c;
+
+    &-tl,
+    &-br {
+      cursor: nwse-resize;
+    }
+
+    &-tl {
+      top: 0;
+      left: 0;
+    }
+
+    &-br {
+      right: 0;
+      bottom: 0;
+    }
+
+    &-tm,
+    &-bm {
+      left: 50%;
+      cursor: ns-resize;
+    }
+
+    &-tm {
+      top: 0;
+    }
+
+    &-bm {
+      bottom: 0;
+    }
+
+    &-tr,
+    &-bl {
+      cursor: nesw-resize;
+    }
+
+    &-tr {
+      top: 0;
+      right: 0;
+    }
+
+    &-bl {
+      bottom: 0;
+      left: 0;
+    }
+
+    &-ml,
+    &-mr {
+      top: 50%;
+      cursor: ew-resize;
+    }
+
+    &-ml {
+      left: 0;
+    }
+
+    &-mr {
+      right: 0;
+    }
+
+    &.not-resizable {
+      display: none;
+    }
+  }
+}

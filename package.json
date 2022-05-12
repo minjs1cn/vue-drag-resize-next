@@ -7,13 +7,15 @@
       "require": "./lib/vue-drag-resize-next.umd.js"
     }
   },
+  "types": "./types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/minjs1cn/vue-drag-resize-next"
   },
   "homepage": "https://minjs1cn.github.io/vue-drag-resize-next",
   "files": [
-    "lib"
+    "lib",
+    "types"
   ],
   "scripts": {
     "dev": "vite",

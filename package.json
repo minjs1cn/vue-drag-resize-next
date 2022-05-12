@@ -1,6 +1,6 @@
 {
   "name": "vue-drag-resize-next",
-  "version": "0.0.2-alpha.2",
+  "version": "0.0.2-alpha.3",
   "main": "./lib/vue-drag-resize-next.umd.js",
   "module": "./lib/vue-drag-resize-next.es.js",
   "exports": {

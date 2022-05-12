@@ -2,7 +2,7 @@ name: Preview
 on:
   push:
     branches:
-      - dev
+      - main
 jobs:
   release:
     name: Release

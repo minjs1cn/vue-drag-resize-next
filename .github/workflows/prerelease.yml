@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     branches:
-      - main
+      - dev
 jobs:
   release:
     name: Release
@@ -19,7 +19,7 @@ jobs:
         run: |
           yarn
           yarn build
-          yarn release
+          yarn release -p alpha
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

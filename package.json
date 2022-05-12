@@ -1,23 +1,31 @@
 {
   "name": "vue-drag-resize-next",
-  "version": "0.0.2-alpha.0",
+  "version": "0.0.2-alpha.3",
+  "main": "./lib/vue-drag-resize-next.umd.js",
+  "module": "./lib/vue-drag-resize-next.es.js",
   "exports": {
     ".": {
       "import": "./lib/vue-drag-resize-next.es.js",
       "require": "./lib/vue-drag-resize-next.umd.js"
+    },
+    "./lib/style.css": {
+      "import": "./lib/style.css",
+      "require": "./lib/style.css"
     }
   },
+  "types": "./types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/minjs1cn/vue-drag-resize-next"
   },
   "homepage": "https://minjs1cn.github.io/vue-drag-resize-next",
   "files": [
-    "lib"
+    "lib",
+    "types"
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "tsc && vue-tsc --noEmit && vite build",
     "preview": "vite build --config vite.config.preview.ts",
     "prepare": "husky install",
     "eslint": "eslint src --ext .ts,.js,.vue --fix",

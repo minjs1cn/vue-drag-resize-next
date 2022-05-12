@@ -1,8 +1,12 @@
 name: Preview
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
+
 jobs:
   release:
     name: Release
@@ -15,6 +19,10 @@ jobs:
         with:
           node-version: 14.18.3
           registry-url: https://registry.npmjs.org/
+      - name: Configure committer
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
       - name: Build
         run: |
           yarn
